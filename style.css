@@ -1,12 +1,852 @@
-/* 
-Theme Name: My Custom Theme
-Theme URI: https://yourwebsite.com/theme
-Author: Navneet Kaur
-Author URI: https://yourwebsite.com
-Description: This is my first custom theme!
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: <https://www.gnu.org/licenses/gpl-2.0.html>
-Text Domain: my-custom-theme
-Tags: custom-background
+
+/*font add*/
+@font-face {
+	font-family: 'Poppins' ;
+	src: url('../fonts/Poppins-Regular.woff') format('woff') ;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Poppins' ;
+	src: url('../fonts/Poppins-Bold.woff') format('woff') ;
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Droid' ;
+	src: url('../fonts/DroidSerif-Regular.woff') format('woff') ;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Droid' ;
+	src: url('../fonts/DroidSerif-Bold.woff') format('woff') ;
+	font-weight: 700;
+	font-style: normal;
+}
+
+:root {
+  --primary-color: #b79259; /* Define a root variable for primary color */
+}
+
+
+*{	
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 16px;
+}
+section {
+	padding: 0px;
+}
+
+.link-button
+{
+	padding: 10px 20px;  
+	cursor:pointer;
+	color:white ;
+	background-color:#b79259;
+	max-width:fit-content;
+	border: none;
+	text-transform:uppercase;
+	font-size: 13px;
+	font-family:Poppins;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	display: block;
+}
+
+.pd-section
+{
+  padding: 50px 0 118px 0;	
+}
+img
+{
+	max-width: 100%;
+	height: auto;
+	width: 100%;
+}
+
+.heading-textt
+{
+  	font-size: 40px;
+	text-transform: capitalize;
+	color:#b79259 ;
+	margin-bottom:8px;
+	font-family:Droid;
+	font-weight: 400;
+	font-style: normal;
+}
+.section-clr
+{
+	background-color: #f7f7f7;
+}
+
+/*CUSTOM FORM*/
+.fetch-link input
+{
+padding: 10px 20px;  
+	cursor:pointer;
+	color:white ;
+	background-color:#b79259;
+	max-width:fit-content;
+	border: none;
+	text-transform:uppercase;
+	font-size: 13px;
+	font-family:Poppins;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	display: block;
+	margin:10px auto;
+}
+.custom-form-mydata
+{
+	margin:20px auto;
+	max-width: 600px;
+	box-shadow: 0 0px 13px #777;
+	padding: 15px;
+	border-radius: 20px;
+	}
+
+/*HEADER MENU*/
+.primary-menu a
+{	
+	text-decoration: none;
+	font-family: Poppins;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    padding: 0px;
+    text-transform: uppercase;
+	color:black !important; 
+}
+.header-inner{
+	max-width: 1296px !important;
+	padding: 0px;
+}
+
+ 
+.site-logo img{
+	padding: 16px !important;
+} 
+
+/*NAVIGATION SECTION*/
+.navbar-nav  a{
+	text-decoration: none;
+	font-family:Poppins;
+	font-weight: 700;
+	font-style: normal;
+	font-size:16px;
+	padding:0px;
+	text-transform: uppercase;
+	color: black;
+	margin-right: 10px;
+}
+
+
+/*BANNER SECTION*/
+.banner-section {
+    background-image: url(http://localhost/wordpress/wp-content/uploads/2025/07/bannerimg.png);
+    background-size: auto;
+    width: 100% ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 160px 0;
+    background-position: center;
+    text-align: center;
+}
+
+.heading-text
+{
+	font-size: 30px;
+    font-weight: normal;
+    text-transform: capitalize;
+    font-family:Droid;
+	font-weight: 400;
+	font-style: normal;
+/*	margin-top: 50px;*/
+}
+.banner-container2 p
+{
+	font-size: 50px;
+    max-width: 500px;
+    line-height: 1.3em;
+    text-overflow: hidden;
+    font-family:Poppins;
+	font-weight: 700;
+	font-style: normal;
+	margin-top: -12px;
+}
+.banner-container2 a{
+	padding: 10px 20px;  
+	cursor:pointer;
+	color:white ;
+	background-color:#b79259;
+	max-width:fit-content;
+	border: none;
+	text-transform:uppercase;
+	font-size: 13px;
+	font-family:Poppins;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	display: block;
+
+}
+/*OUR STORY SECTION*/
+.ourstory-text h2
+{
+	font-size: 40px;
+	text-transform: capitalize;
+	color:#b79259 ;
+	margin-bottom:8px;
+	font-family:Droid;
+	font-weight: 400;
+	font-style: normal;
+}
+.ourstory-text p
+{
+	line-height:1.5em;
+	letter-spacing:1px;
+	font-family:Poppins;
+	font-weight: 400;
+	font-style: normal;
+	font-size:16px;
+}
+
+.ourstory-text a{
+	padding: 10px 20px;  
+	cursor:pointer;
+	color:white ;
+	background-color:#b79259;
+	max-width:fit-content;
+	border: none;
+	text-transform:uppercase;
+	font-size: 13px;
+	font-family:Poppins;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	display: block;
+}
+
+/* EXPLORE OUR ROOMS SECTION */
+
+.small-para
+{
+    line-height: 1.5em;
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+.explorerooms-first-col
+{
+	margin-bottom:22px ;
+}
+.big-text
+{
+	font-size: 26px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+    color: #b79259;
+}
+#explorepara1
+{
+	text-align: center;
+    padding: 14px 0;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: normal;
+    color: #b79259;
+    text-transform: capitalize;
+/*    margin-bottom: 20px;*/
+}
+#explorepara2
+{
+	text-align: center;
+    padding: 14px 0;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: normal;
+    color: #b79259;
+    text-transform: capitalize;
+}
+.explore-our-rooms a{
+	
+	padding: 10px 20px;  
+	cursor:pointer;
+	color:white ;
+	background-color:#b79259;
+	max-width:fit-content;
+	border: none;
+	text-transform:uppercase;
+	font-size: 13px;
+	font-family:Poppins;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	display: block;
+
+}
+/*OUR Sercices*/
+.services-box-image-box{
+		width: 100%;
+	    padding: 17px 0;
+	    box-shadow: 0 0 40px -25px #2d2d2d;
+	    margin: 0;
+	    background-color: #fff;
+	    text-align: center;
+	    height: 100%;
+	    border-radius: 9px;
+}
+.services-box-image-box img{
+	width: 100%;
+    height: auto;
+    vertical-align: middle;
+    padding: 0 20px;
+	}
+	.services-box-image-box p
+	{
+		margin-top: 9px;
+		font-size: 12px;
+        text-transform: capitalize;
+        font-family: Poppins;
+        font-weight: 400;
+        margin-right: 0px;
+        text-align: center;
+        word-break: break-word;
+	}
+	.services-span
+	{
+		display: block;
+		font-size:13px;
+		text-transform: capitalize;
+		font-family: poppins;
+		font-weight: 400;
+		text-align: center;
+	}
+
+/*OUR STORY SECTION*/
+
+.ourstory-text p
+{
+	line-height:1.5em;
+	letter-spacing:1px;
+	font-family:Poppins;
+	font-weight: 400;
+	font-style: normal;
+	font-size:16px;
+}
+/* EXPLORE OUR ROOMS SECTION */
+/*.col-lg-2
+ {
+	flex: 0 0 20%;
+    max-width: 20%;
+ }*/
+.small-para
+{
+    line-height: 1.5em;
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+.explorerooms-first-col
+{
+	margin-bottom:22px ;
+}
+.big-text
+{
+	font-size: 26px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+    color: #b79259;
+}
+#explorepara1
+{
+	text-align: center;
+    padding: 14px 0;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: normal;
+    color: #b79259;
+    text-transform: capitalize;
+/*    margin-bottom: 20px;*/
+}
+#explorepara2
+{
+	text-align: center;
+    padding: 14px 0;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: normal;
+    color: #b79259;
+    text-transform: capitalize;
+}
+.explore-container h2{
+	 font-size: 40px;
+	text-transform: capitalize;
+	color:#b79259 ;
+	margin-bottom:8px;
+	font-family:Droid;
+	font-weight: 400;
+	font-style: normal;
+
+}
+
+/*EXPLORE SECTION*/
+.explore-container
+{
+	text-align: center;
+	padding: 10px 0px;
+}
+.explore-container p
+{
+		max-width: 800px;
+    line-height: 1.5em;
+    text-align: center; 
+    margin: 0 auto;
+    font-family:Poppins;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 16px;
+}
+.explore-conatiner-outer
+{
+	width: 100%;
+  padding: 20px 0 20px 0;
+}
+.explore-conatiner-outer img {
+    display: block;
+    width: 100%;
+    margin: 0 auto 12px auto;
+}
+.explore-conatiner-outer p
+{
+	text-transform: capitalize;
+	color: #b79259;
+	text-align: center;
+	font-size:13px;
+	font-family:Poppins;
+	font-weight: 400;
+	font-style: normal;
+}
+.explore-section a{
+
+	padding: 10px 20px;  
+	cursor:pointer;
+	color:white ;
+	background-color:#b79259;
+	max-width:fit-content;
+	border: none;
+	text-transform:uppercase;
+	font-size: 13px;
+	font-family:Poppins;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	display: block;
+
+}
+
+/*CONTACT-FORM*/
+.contactus-form .contact-form
+{
+	width:100%;
+	max-width: 730px;
+    margin: 0 auto;
+}
+
+.contactus-form input,textarea
+{
+	padding: 14px;
+	width: 100%;
+	flex: 1;
+	border: 1px solid #dddddd;
+	font-size:16px;
+}
+/*.contactus-form .form-group{
+	margin-bottom: 12px;
+}
 */
+.contactus-form .form-control
+{
+	display: block;
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    font-weight: 400;
+	border-radius: 0px;
+	line-height: 1.5;
+	/*margin-bottom: 12px;*/
+}
+.contactus-form .form-control::placeholder 
+{
+	color: black;
+	font-size: 13px;
+	text-transform: capitalize;
+	font-family:Poppins;
+	font-weight: 400;
+	font-style: normal;
+}
+.contactus-form h2{
+
+	font-size: 40px;
+	text-transform: capitalize;
+	color:#b79259 ;
+	margin-bottom:8px;
+	font-family:Droid;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.contactus-form .contact-btn
+{
+	padding: 10px 20px;  
+	cursor:pointer;
+	color:white ;
+	background-color:#b79259;
+	max-width:fit-content;
+	border: none;
+	text-transform:uppercase;
+	font-size: 13px;
+	font-family:Poppins;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	display: block;
+}
+
+/*FOOTER CONTAINER */
+#site-footer{
+	padding: 0px;
+	background: black;
+	color: white;
+}
+.footer-row
+{
+	width: 100%;
+    padding: 35px 0 40px;
+    border-bottom: 1px solid #424242;
+}
+.footer-items h4
+{
+	color:#b79259;
+	margin-bottom: 10px;
+	text-transform:uppercase;
+	font-family:Poppins;
+	font-weight:700;
+	font-style: normal;
+	font-size: 16px;
+}
+.footer-items p{
+	font-size: 16px;
+}
+.footer-items li {
+    margin: 0px;
+    list-style: none;
+}
+.footer-items a{
+	font-family: Poppins;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    text-transform: capitalize;
+    margin-bottom: 4px;
+    text-decoration: none;
+    color: white;
+}
+
+.copyright1{
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-family:Poppins;
+	font-weight:400;
+	font-style: normal;
+	font-size: 13px;
+}
+
+.footermenu2{
+	list-style: none;
+}
+
+/*EXTRA CSS */
+.my-single-post img
+{
+	width: 600px;
+	height: 400px;
+
+}
+.my-single-post p
+{	
+	color: black;
+	font-family:Poppins;
+	font-weight: 400;
+	font-style: normal;
+}
+.my-single-post h3
+{
+	text-align: center;
+}
+/*span.posthead-color{
+	color: #b79259;
+}
+*/
+
+
+/*categories CSS*/
+
+.mypost-achive
+{
+	padding: 0px 15px;
+}
+/*feature media CSS*/
+.mypost-media
+{
+	margin:15px !important;
+}
+.mypost-img img
+{
+  	width: 400px;
+  	height: 400px;
+}
+
+strong{
+	text-align: center;
+}
+
+.mypost-content{
+	padding: 0 15px;
+}
+.mypost-content h3{
+	font-size: 28px;
+}
+.mypost-content p{
+	font-size: 14px;
+	font-family:Poppins;
+	font-weight: 400;
+	font-style: normal;
+}
+/*wrapping the column 3-3*/
+
+.listing-wrap {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+@media (min-width: 992px) {
+    .col-lg-2 {
+        flex: 0 0 20%;
+        /* width: 16.66666667%; */
+        max-width: 20%;
+    }
+}
+
+/*media queries*/
+@media (max-width: 991px) {
+    .pd-section {
+        padding: 25px 0 65px 0;
+    }
+   /* h2
+    {
+    	text-align: center;
+    	font-size: 38px;
+    }*/
+.navbar-collapse {
+    width: 100%;
+}
+
+/*BANNER SECTION*/
+	.banner-section
+	 {
+  	 padding: 100px 0;
+  	}
+  	.heading-text
+	{
+	font-size: 20px;
+	}
+	.banner-container2 p
+	{
+	font-size: 40px;
+    }
+
+/*EXPLORE OUR ROOMS SECTION*/
+	.big-text
+	{
+		font-size:17px;
+	}
+	#explorepara1
+	{
+		font-size: 15px;
+	}
+	#explorepara2
+	{
+		font-size: 15px;
+	}
+	.explore-our-rooms h2{
+		text-align: center;
+    	font-size: 38px;
+	}
+
+
+
+/* Explore container*/
+	.explore-container p
+	{
+		font-size:15px;
+	}
+	.explore-container h2
+	{
+		text-align: center;
+    	font-size: 38px;
+	}
+
+/*OUR STORY*/
+	.ourstory-text p
+	{
+	font-size: 15px;
+	}
+
+	.ourstory-text h2
+	{
+		text-align: center;
+    	font-size: 38px;
+	}
+
+	/*OUR SERVICES */
+	.our-services h2{	
+		text-align: center;
+    	font-size: 38px;
+	}
+	.small-para{
+		font-size: 15px;
+	}
+
+	/*CONTACT US FORM*/
+	.contactus-form h2{
+		text-align: center;
+    	font-size: 38px;
+	}
+	.contactus-form textarea{
+		height: 134px;
+	}
+		
+}
+
+@media (max-width:767px) {
+a.navbar-brand {
+    width: 50%;
+}
+    .pd-section {
+        padding:19px 0 60px 0;
+    }
+    /* h2
+    {
+    	text-align: center;
+    	font-size: 28px;
+    }*/
+
+/*navigation-section*/
+nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+/*BANNER SECTION*/
+	.banner-section
+	 {
+		padding: 80px 0;
+
+  	}
+  	.heading-text
+	{
+		font-size: 18px;
+	}
+	.banner-container2 p
+	{
+		font-size: 30px;
+	    max-width: 350px;
+    }
+
+/*EXPLORE OUR ROOMS SECTION*/
+	.big-text
+	{
+		font-size:14px;
+		margin-top: 14px;
+		margin-bottom:14px;
+
+	}
+	#explorepara1
+	{
+		font-size: 14px;
+		margin-bottom: 0;
+	}
+	#explorepara2
+	{
+		font-size: 14px;
+	}
+	.explore-our-rooms h2{
+		text-align: center;
+    	font-size: 28px;
+	}
+
+
+    /* Explore container*/
+	.explore-container p
+	{
+		font-size:14px;
+	}
+
+	.explore-container h2
+	{
+		text-align: center;
+    	font-size: 28px;
+	}
+
+
+	/*OUR STORY*/
+	.ourstory-text p
+	{
+	font-size: 14px;
+	}
+
+	.ourstory-text h2
+	{
+		text-align: center;
+    	font-size: 28px;
+	}
+
+	/*OUR SERVICES */
+	.our-services h2{	
+		text-align: center;
+    	font-size: 28px;
+	}
+
+	.small-para{	
+    	font-size: 14px;
+	}
+
+	/*CONTACT US FORM*/
+	.contactus-form h2{
+		text-align: center;
+    	font-size: 28px;
+	}
+}
